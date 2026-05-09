@@ -1,4 +1,4 @@
-# Калькулятор (Лабораторна робота 5)
+# Система обліку (Лабораторна робота 5)
 
 [![Python CI Application](https://github.com/Vlopuliak/Software-Systems-Theory-Lab4/actions/workflows/python-app.yml/badge.svg)](https://github.com/Vlopuliak/Software-Systems-Theory-Lab4/actions/workflows/python-app.yml)
 
