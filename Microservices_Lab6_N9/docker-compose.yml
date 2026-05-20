@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  employee-service:
+    build: ./employee_service
+    ports:
+      - "8009:8000"
+    environment:
+      - STUDENT_N=9
+    networks:
+      - tracking-net
+
+  attendance-service:
+    build: ./attendance_service
+    ports:
+      - "9009:8000"
+    environment:
+      - STUDENT_N=9
+    depends_on:
+      - employee-service
+    networks:
+      - tracking-net
+
+networks:
+  tracking-net:
+    driver: bridge
